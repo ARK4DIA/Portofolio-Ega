@@ -1,0 +1,127 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-black-100);
+    color: var(--text-black-900);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: var(--bg-black-50);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: var(--text-black-900);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a i {
+    margin-right: 8px;
+}
+
+header nav a:hover {
+    color: var(--skin-color);
+}
+
+.portf {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--text-black-900);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .description {
+    padding: 15px;
+    font-size: 16px;
+    color: var(--text-black-700);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.style-switcher {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: var(--bg-black-100);
+    padding: 10px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.style-switcher .s-icon {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.colors span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.day-night {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

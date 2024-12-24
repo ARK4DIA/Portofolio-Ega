@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM</title>
+    <link rel="stylesheet" href="style.css">
+
+        <!-- ===== CSS Files ===== -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="color-1.css" />
+        <link rel="stylesheet" href="color-2.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <!-- ====== Style Switcher ====== -->
+        <link
+          rel="stylesheet"
+          href="color-1.css"
+          class="alternate-style"
+          title="color-1"
+          disabled />
+        <link
+          rel="stylesheet"
+          href="color-2.css"
+          class="alternate-style"
+          title="color-2"
+          disabled />
+        <link
+          rel="stylesheet"
+          href="color-3.css"
+          class="alternate-style"
+          title="color-3"
+          disabled />
+        <link
+          rel="stylesheet"
+          href="color-4.css"
+          class="alternate-style"
+          title="color-4"
+          disabled />
+        <link
+          rel="stylesheet"
+          href="color-5.css"
+          class="alternate-style"
+          title="color-5"
+          disabled />
+        <link rel="stylesheet" href="style-switcher.css" />
+      </head>
+      <body>
+    <!-- Tambahkan Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-home"></i> <!-- Ikon Home -->
+                Kembali ke Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <section class="portf">
+        <h1>Mockup</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="gambar1.jpg" alt="Gambar Proyek 1">
+                <p>Deskripsi gambar 1</p>
+            </div>
+            <div class="card">
+                <img src="gambar2.jpg" alt="Gambar Proyek 2">
+                <p>Deskripsi gambar 2</p>
+            </div>
+            <div class="card">
+                <img src="gambar3.jpg" alt="Gambar Proyek 3">
+                <p>Deskripsi gambar 3</p>
+            </div>
+            <div class="card">
+                <img src="gambar4.jpg" alt="Gambar Proyek 4">
+                <p>Deskripsi gambar 4</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== Style Switcher Start ===== -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ===== Style Switcher End ===== -->
+  <!-- ===== Js script ===== -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+  referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="style-switcher.js"></script>
+</body>
+</html>
